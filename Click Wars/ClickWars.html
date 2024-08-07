@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="ClickWars.css" />
+    <title>Click Wars</title>
+  </head>
+  <h1 class="title">Click Wars</h1>
+  <br />
+  <body>
+    <h1 class="wins">
+      <span class="TotalWins">Total Wins:</span> <br />
+      <span class="win1">
+        <span id="PlayerNameWin1">Player 1</span> =
+        <span id="PlayerWinCount1">0</span><br />
+        <span class="win2" id="PlayerNameWin2">Player 2</span> =
+        <span id="PlayerWinCount2">0</span></span
+      >
+    </h1>
+    <main>
+      <button class="start" id="start" onclick="start('start')">
+        Start <br />
+        <span class="note"
+          >(Player Names can only be changed before pressing the start
+          button)</span
+        >
+      </button>
+      <div class="container1" id="container1">
+        <div class="player1" id="player1">
+          <h1 class="counter1"><span id="counter1">0%</span></h1>
+          <div class="bar1" id="bar1"></div>
+        </div>
+        <input
+          type="text"
+          placeholder="Player Name"
+          value="Player 1"
+          id="name1"
+          class="name1"
+        />
+        <p class="Instruction1">Press A</p>
+      </div>
+
+      <div class="container2" id="container2">
+        <div class="player2" id="player2">
+          <h1 class="counter2"><span id="counter2">0%</span></h1>
+          <div class="bar2" id="bar2"></div>
+        </div>
+        <input
+          type="text"
+          placeholder="Player Name"
+          value="Player 2"
+          id="name2"
+          class="name2"
+        />
+        <p class="Instruction2">Press L</p>
+      </div>
+    </main>
+
+    <script src="ClickWars.js"></script>
+  </body>
+</html>
